@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!#eu2lc-ower)%c1-d@vy3eph*!k!v^^eq03m*7@33f^7p)e#o
 DEBUG = True
 
 ALLOWED_HOSTS = ['spacex-py.onrender.com', 'localhost']
-APPEND_SLASH = True
+APPEND_SLASH = False
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = [
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware','
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'mysite.urls'
